@@ -2,33 +2,45 @@
 <html>
 	<head>
 		<title>bai tap 2</title>
+		<style>
+		
+			h1{
+			color:Purple;
+			}
+			h3{
+			color:#FF4E5D;
+			}
+		</style>
 	</head>
 	
 	<body>
-		<h1 style="color:Purple">A Simple Form</h1>
-		<h3 style="color: #FF4E5D">Form fundamental</h3>
+		<h1>A Simple Form</h1>
+		<h3>Form fundamental</h3>
 		<form id="orderForm">
 			<fieldset>
 				<legend>Customer Info</legend>
 				<p>
 					<label for="fullname">Name:</label>
-					<input id="fullname" name="name" typr "text" placeholder="Enter your name"></input>
+					<input type="text" id="fullname" name="name" placeholder="Enter your name"></input>
 				</p>
 			
 				<p>
 					<label for="fullname">Telephone:</label>
-					<input id="fullname" name="telephone" typr "text" placeholder="Pattern: 1-234-567-8910"></input>
+					<input type="text" id="fullname" name="telephone" placeholder="Pattern: 1-234-567-8910"></input>
 				</p>
 			
 				<p>
 					<label for="E-mail address ">E-mail address:</label>
-					<input id="fullname" name="E-mail address" typr "text" placeholder="Enter your mail address"></input>
+					<input type="text" id="fullname" name="E-mail address" placeholder="Enter your mail address"></input>
 				</p>
 			
 				<p>
-					<label for="Gender">Gender:</label>
-					<input type="radio">Male</input>
-					<input type="radio">Female</input>
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label><br>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label><br>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
 				</p>
 			
 				<p>
@@ -53,8 +65,10 @@
 
 			</fieldset>
 		</form>
-
-		<button name="button" type="button">Sumit</button>
-		<button name="button" type="button">Reset</button
+		
+		<form>
+			<input type="submit" value="Submit">
+			<input type="submit" value="Reset">
+		</form>
 	</body>
 </html>
