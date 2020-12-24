@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bai tap 5</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			
+			body{
+				background-color: #FEF1E1;
+			}
+			
+			.container{
+				padding-top: 30px;
+				width: 80%;
+				margin: auto;
+				background-color: white;
+			}
+			.content{
+				display: flex;
+				border-bottom: solid;
+			}
+			.content:last-child{
+				border: none;
+			}
+			.left{
+				width: 80%;
+				display: block;
+			}
+			.left> h3{
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			.left> p{
+				margin-bottom: 10px;
+			}
+			.right{
+				margin: 5px;
+				padding: 15px;
+				width: 20%;
+				display: block;
+			}
+			.right > h3{
+				margin-top: 12px;
+				border-bottom: solid 1px ;
+			}
+			.right > ul{
+				padding-left: 30px;
+			}
+			#bg1{
+				background-color:#FFFFC5;
+			}
+			#bg2{
+				background-color:#FFEBEB;
+			}
+			#bg3{
+				background-color:#C5FFFF;
+			}
+		</style>
+	</head>
+	
+	<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi in nemo asperiores.
+				Necessitatibus repellendus nobis aspernatur nesciunt numquam, quod voluptas corrupti cupiditate dolorem beatae, delectus qui veniam.
+				Iusto, alias?</p>
+            </div>
+			
+            <div id="bg1" class="right">
+                <h3>SideBar 1</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+		
+        <div class="content">
+            <div class="left">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi in nemo asperiores.
+				Necessitatibus repellendus nobis aspernatur nesciunt numquam, quod voluptas corrupti cupiditate dolorem beatae, delectus qui veniam.
+				Iusto, alias?</p>
+            </div>
+            <div id="bg2" class="right">
+                <h3>SideBar 1</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+		
+        <div class="content">
+            <div class="left">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi in nemo asperiores.
+				Necessitatibus repellendus nobis aspernatur nesciunt numquam, quod voluptas corrupti cupiditate dolorem beatae, 
+				delectus qui veniam. Iusto, alias?</p>
+            </div>
+            <div id="bg3" class="right">
+                <h3>SideBar 1</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
