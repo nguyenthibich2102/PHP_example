@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>bai tap 3 </title>
+		<style>
+			.enter_text_here{
+				width: 400px;
+				height: 80px; 
+				text-align: justify;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Application for permission to date my daughter</h1>
+		<p><b>Note:</b> Form is to be completed at 21 days prior to datw</p>
+		<form action='.' method="post">
+			<fieldset>
+				<legend>Personal Details</legend>
+				<label>Name:</label>
+				<input type="text" name="name" size="20" placeholder="Enter name here" autofocus><br>
+				<label>Address:</label>
+				<input type="text" name="addr" size="20" placeholder="Enter address here"><br>
+				<label>Email:</label>
+				<input type="email" name="email" size="20" placeholder="Enter email here"><br>
+				<label>Phone Number:</label>
+				<input type="text" name="number" size="20" placeholder="Enter 10 digit number"><br>
+				<label>IQ:</label>
+				<input type="number" name="iq" size="20" placeholder="Enter IQ here"><br>
+				<label>Gender</label><br>
+					<input type="radio" name="gender" value="Male">
+					<label>Male</label><br>
+					<input type="radio" name="gender" value="Female">
+					<label>Female</label><br>
+					<input type="radio" name="gender" value="Other">
+					<label>Other</label><br><br>
+				<label>Date of Persuasion Outing:</label>
+				<input type="date" name="date" value>
+			</fieldset>
+			
+			<fieldset>
+				<p>Check All That Apply</p>
+				<input type="checkbox" name="Check" value="I haver tattoos and/or piercings">
+				<label>I haver tattoos and/or piercings</label><br>
+				<input type="checkbox" name="Check" value="I am more than 2 years older than my daughter">
+				<label>I am more than 2 years older than my daughter</label><br>
+				<input type="checkbox" name="Check" value="I own a panel van or V8 ute">
+				<label>I own a panel van or V8 ute</label><br>
+				<input type="checkbox" name="Check" value="I work full-time">
+				<label>I work full-time</label><br>
+				<input type="checkbox" name="Check" value="My parents are rich">
+				<label>My parents are rich</label><br>
+				<input type="checkbox" name="Check" value="Is the date at a well lit public location">
+				<label>Is the date at a well lit public location</label><br>
+			</fieldset>
+			
+			<fieldset>
+				<label>Political Persuasion:</label>
+				<input list="item">
+				<datalist id="item">
+					<option value="Left Wing">
+					<option value="Right Wing">
+					<option value="Conservative"> 
+					<option value="Nazi">
+				</datalist>
+				
+				<label>Education Level Completed:</label>
+				<input list="choose">
+				<datalist id="choose">
+				<option value="University">
+				<option value="College">
+			 	<option value="High School">
+			 	<option value="None">
+				</datalist>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Essay Section</legend>
+				<label>In 50 words or more explain why you want to date my daughter</label><br>
+				<textarea class="enter_text_here" name="massage" placeholder="Enter Text Here"></textarea><br><br>
+				<label>Please upload contact details for 2 references</label><br>
+				<textarea class="enter_text_here" name="massage" placeholder="Enter Text Here"></textarea><br><br>
+			<label>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label>
+			<input type="file" name="cfile" value="Choose File"><br>
+			</fieldset>
+			<input type="submit" name="submit" value="Send your application">
+		</form>
+	</body>
+</html>
