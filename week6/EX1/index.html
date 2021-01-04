@@ -2,35 +2,49 @@
 <html>
 	<head>
 		<title>bai tap 1</title>
-		<style>
-			
-		</style>
+	<style>
+		.border{
+			width: 500px; 
+		}
+		.knot{
+			border-radius:4px;
+		}
+	</style>
 	</head>
+	
 	<body>
-		<form action="/action_page.php">
-			<label for="1st Number">1st Number:</label><br>
-			<input type="number" id="1st Number" name="1st Number"><br>
-			
-			<label for="2nd Number">2nd Number:</label><br>
-			<input type="number" id="2nd Number" name="2nd Number" ><br><br>
-			<input type="sumit" value="Multiply" size="5px"> 
-			
-			<input type="sumit" value="Divide" size="5px">
-			
+		<form action="#">
+			<fieldset class="border">
+				<table>
+					<tr>
+						<td>1st Number </td>
+						<td><input type="text" name="1st_number" size="30px" id="number1" placeholder="enter the first number"></td>
+					</tr>
+					
+					<tr>
+						<td>2nd Number</td>
+						<td><input type="text" name="2nd_number" size="30px" id="number2" placeholder="enter the second number"></td>
+					</tr>
+				</table>
+				<input class="knot" type="button" name="multiply" value="Multiply" onclick="Calculate1()">
+				<input class="knot" type="button" name="divide" value="Divide" onclick="Calculate2()">
+				<p>The Result Is :</p>
+				<p id="displayed"></p>
+			</fieldset>
 			<script>
-			var x = 12;
-			var y = 10;
-			var z = x * y;
-		
+				function Calculate1(){
+					var number1 = document.getElementById('number1').value;
+					var number2 = document.getElementById('number2').value;
+					var result = number1 * number2;
+					document.getElementById('displayed').innerHTML = result;	
+				}
+				function Calculate2(){
+					var number1 = document.getElementById('number1').value;
+					var number2 = document.getElementById('number2').value;
+					var result = number1 / number2;
+					document.getElementById('displayed').innerHTML = result;	
+				}
 			</script>
-		
-			<script>
-			var x = 12;
-			var y = 10;
-			var z = x / y;
-			</script>
-			<p>The Result Is:
 		</form>
-		
 	</body>
 </html>
