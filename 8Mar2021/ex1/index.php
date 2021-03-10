@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>demo02</title>
+	<title>Bai 1</title>
 </head>
 <body>
 <?php
 	$a=2;
 	$b=2;
-	echo  'a=2'."<br>";
-	echo 'b=2'."<br>";
-	echo 'tong='.$result = ($a + $b) * 3;
+	if ($a==$b){
+	echo ($a+$b)*3;
+	}
+	else {
+	echo "False";
+}
 ?>
 </body>
 </html>
