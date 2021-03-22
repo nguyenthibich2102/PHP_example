@@ -9,14 +9,14 @@
 		function countWords($str) {
 			$new=explode(" ",$str);
 			$arrayCount=array();
-			for($i=0;$i<count($new);$i++) {
+			for($a=0;$a<count($new);$a++) {
 				$count=0;
 				foreach($new as $value) {
-					if($new[$i] == $value) {
+					if($new[$a] == $value) {
 						$count++;
 					}
 				}
-				$arrayCount[$new[$i]]=$count;
+				$arrayCount[$new[$a]]=$count;
 			}
 			return $arrayCount;
 		}
